@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <center style="margin-top: 100px;">
+        <div style="height: 350px; width: 350px;">
+            <div id="calculator" class="grid-container">
+                <div id="operation" style="border-bottom: 3px  solid #2196F3" class="result"></div>
+                <button type="button" id="ce" class="grid-item" onClick="clearEverything()">CE</button>
+                <div class="grid-numbers">
+                    <button type="button" id="7" class="grid-item" onClick="writeNumbers()">7</button>
+                    <button type="button" id="8" class="grid-item" onClick="writeNumbers()">8</button>
+                    <button type="button" id="9" class="grid-item" onClick="writeNumbers()">9</button>
+                    <button type="button" id="4" class="grid-item" onClick="writeNumbers()">4</button>
+                    <button type="button" id="5" class="grid-item" onClick="writeNumbers()">5</button>
+                    <button type="button" id="6" class="grid-item" onClick="writeNumbers()"> 6</button>
+                    <button type="button" id="1" class="grid-item" onClick="writeNumbers()">1</button>
+                    <button type="button" id="2" class="grid-item" onClick="writeNumbers()">2</button>
+                    <button type="button" id="3" class="grid-item" onClick="writeNumbers()">3</button>
+                    <button type="button" id="0" class="grid-item" onClick="writeNumbers()">0</button>
+                    <button type="button" id="." class="grid-item" onClick="writeNumbers()">.</button>
+                    <button type="button" id="=" class="grid-item"
+                        onClick="operateArrays(user,arrayOperators);operate('+', user[0], 0);">=</button>
+                </div>
+                <div class="grid-operators">
+                    <button type="button" id="÷" class="grid-item" onClick="buttonsOperator();">÷</button>
+                    <button type="button" id="x" class="grid-item" onClick="buttonsOperator();">x</button>
+                    <button type="button" id="-" class="grid-item" onClick="buttonsOperator();">-</button>
+                    <button type="button" id="+" class="grid-item" onClick="buttonsOperator();">+</button>
+                </div>
+            </div>
+        </div>
+    </center>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
